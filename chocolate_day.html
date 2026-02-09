@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Chocolate Day! 🍫</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating chocolates background -->
+    <div class="chocolate-bg" id="chocolateBg"></div>
+
+    <div class="container">
+        <div class="chocolate-icon">🍫</div>
+        
+        <h1>Happy Chocolate Day!</h1>
+        <p class="subtitle">Anjali</p>
+
+        <div class="heart-container">
+            <span class="heart">❤️</span>
+            <span class="heart">🍫</span>
+            <span class="heart">❤️</span>
+        </div>
+
+        <div class="message-box">
+            <p>Dear Best Friend,</p>
+            <p>Just like chocolate makes everything sweeter, you make my life so much better! On this special Chocolate Day, I want to remind you how precious you are to me.</p>
+            <p>You're the sweetest person I know—sweeter than the finest chocolate! Thank you for always being there, for all the laughs, the memories, and the unconditional support.</p>
+            <p>May your life be as sweet as chocolate, as colorful as candies, and as joyful as our friendship!</p>
+            <p><strong>Here's to many more sweet moments together! 🍫✨</strong></p>
+        </div>
+
+        <p class="instruction">👇 Click your favorite chocolate to unwrap a sweet surprise! 👇</p>
+
+        <div class="chocolate-box">
+            <button class="chocolate-card dairy-milk" onclick="openModal('dairyMilk')">
+                <div class="chocolate-emoji">🍫</div>
+                <div class="chocolate-name">Dairy Milk</div>
+                <div class="chocolate-tagline">Smooth & Creamy</div>
+            </button>
+
+            <button class="chocolate-card kitkat" onclick="openModal('kitkat')">
+                <div class="chocolate-emoji">🍫</div>
+                <div class="chocolate-name">KitKat</div>
+                <div class="chocolate-tagline">Have a Break</div>
+            </button>
+
+            <button class="chocolate-card five-star" onclick="openModal('fiveStar')">
+                <div class="chocolate-emoji">⭐</div>
+                <div class="chocolate-name">5 Star</div>
+                <div class="chocolate-tagline">Eat 5 Star</div>
+            </button>
+
+            <button class="chocolate-card snickers" onclick="openModal('snickers')">
+                <div class="chocolate-emoji">🥜</div>
+                <div class="chocolate-name">Snickers</div>
+                <div class="chocolate-tagline">Packed with Peanuts</div>
+            </button>
+
+            <button class="chocolate-card munch" onclick="openModal('munch')">
+                <div class="chocolate-emoji">🍪</div>
+                <div class="chocolate-name">Munch</div>
+                <div class="chocolate-tagline">Crunchy Delight</div>
+            </button>
+
+            <button class="chocolate-card perk" onclick="openModal('perk')">
+                <div class="chocolate-emoji">🌟</div>
+                <div class="chocolate-name">Perk</div>
+                <div class="chocolate-tagline">Take It Easy</div>
+            </button>
+        </div>
+
+        <p class="footer-text">
+            <span class="sparkle">✨</span> 
+            Forever Your Best Friend 
+            <span class="sparkle">✨</span>
+        </p>
+    </div>
+
+    <!-- Modal for Dairy Milk -->
+    <div id="dairyMilkModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('dairyMilk')">×</button>
+            <div class="modal-logo">🍫</div>
+            <h2 class="modal-title" style="color: #7b2cbf;">Dairy Milk Sweetness</h2>
+            <div class="modal-wish" style="background: linear-gradient(135deg, #7b2cbf 0%, #5a189a 100%);">
+                Just like Dairy Milk is smooth and creamy, our friendship is filled with sweet moments and pure joy! You make my life richer and more delightful, just like the creamy goodness of this chocolate. Thank you for being the sweetest friend anyone could ask for! 💜✨
+            </div>
+            <div class="modal-hearts">💜🍫💜</div>
+        </div>
+    </div>
+
+    <!-- Modal for KitKat -->
+    <div id="kitkatModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('kitkat')">×</button>
+            <div class="modal-logo">🍫</div>
+            <h2 class="modal-title" style="color: #e63946;">Have a Break, Have a KitKat</h2>
+            <div class="modal-wish" style="background: linear-gradient(135deg, #e63946 0%, #d62828 100%);">
+                Life gets busy, but with you, every moment feels like a sweet break! Just like KitKat gives us a crispy, crunchy pause from the daily rush, you bring joy and refreshment to my life. Thanks for being my perfect break buddy and making every day special! ❤️🍫
+            </div>
+            <div class="modal-hearts">❤️🍫❤️</div>
+        </div>
+    </div>
+
+    <!-- Modal for 5 Star -->
+    <div id="fiveStarModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('fiveStar')">×</button>
+            <div class="modal-logo">⭐</div>
+            <h2 class="modal-title" style="color: #023e8a;">You're My 5 Star!</h2>
+            <div class="modal-wish" style="background: linear-gradient(135deg, #023e8a 0%, #03045e 100%);">
+                You deserve a 5-star rating in everything—friendship, kindness, loyalty, and awesomeness! Just like 5 Star chocolate is filled with caramel goodness, you fill my life with golden memories and precious moments. You're not just a friend, you're a superstar in my life! Keep shining bright! 🌟💙
+            </div>
+            <div class="modal-hearts">⭐💙⭐</div>
+        </div>
+    </div>
+
+    <!-- Modal for Snickers -->
+    <div id="snickersModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('snickers')">×</button>
+            <div class="modal-logo">🥜</div>
+            <h2 class="modal-title" style="color: #6b4423;">Packed with Love!</h2>
+            <div class="modal-wish" style="background: linear-gradient(135deg, #6b4423 0%, #4a2f1a 100%);">
+                Just like Snickers is packed with peanuts, caramel, and nougat, our friendship is packed with fun, laughter, and endless adventures! You satisfy my need for a true friend in every way. When life gets tough, you're always there to make it better. You're not you when you're without me, and I'm not me without you! 🤎🥜
+            </div>
+            <div class="modal-hearts">🤎🥜🤎</div>
+        </div>
+    </div>
+
+    <!-- Modal for Munch -->
+    <div id="munchModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('munch')">×</button>
+            <div class="modal-logo">🍪</div>
+            <h2 class="modal-title" style="color: #ff6b35;">Crunchy & Amazing!</h2>
+            <div class="modal-wish" style="background: linear-gradient(135deg, #ff6b35 0%, #f77f00 100%);">
+                Life with you is like munching on a crispy Munch chocolate—full of delightful surprises and satisfying crunch! You add that extra crispiness to my ordinary days and make everything so much more exciting. Thanks for being the crunchy, fun, and absolutely amazing friend that you are! 🧡🍪
+            </div>
+            <div class="modal-hearts">🧡🍪🧡</div>
+        </div>
+    </div>
+
+    <!-- Modal for Perk -->
+    <div id="perkModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('perk')">×</button>
+            <div class="modal-logo">🌟</div>
+            <h2 class="modal-title" style="color: #2a9d8f;">Take It Easy, My Friend!</h2>
+            <div class="modal-wish" style="background: linear-gradient(135deg, #2a9d8f 0%, #264653 100%);">
+                Just like Perk reminds us to "Take It Easy," you teach me to enjoy life's simple pleasures and not stress about the small stuff! Your calm presence and easy-going nature make every problem seem smaller. Thanks for being the chill, wonderful friend who always knows how to make me smile and relax! 💚🌟
+            </div>
+            <div class="modal-hearts">💚🌟💚</div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
